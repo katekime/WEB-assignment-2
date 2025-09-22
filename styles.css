@@ -34,7 +34,6 @@ body {
   font-size: 3em;
   font-weight: bold;
   color: #fff;
-  margin-right: 10px;
 }
 
 p {
@@ -129,7 +128,7 @@ p {
   background: darkred;
 }
 
-h1::after {
+.highlighted-text::after {
   content: " ★★★★★";
   color: rgb(255, 251, 0);
 }
@@ -159,3 +158,19 @@ h1::after {
     border: 1px solid rgb(255, 255, 255);
     transition: 0.7s;
  }
+
+.collection {
+  max-width: 1400px;
+  margin-inline: auto;
+  padding-inline: 16px;
+}
+.collection__body {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.collection__images {
+  display: flex;
+  column-gap: 20px;
+  justify-content: center;
+}
